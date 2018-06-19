@@ -1,0 +1,11 @@
+#!/bin/bash 
+if [[ $EUID -ne 0 ]]; then 
+	echo "This script must be run as root" 1>&2 
+	exit 1 
+else
+	wget https://www.libreoffice.org/donate/dl/deb-x86_64/6.0.4/en-US/LibreOffice_6.0.4_Linux_x86-64_deb.tar.gz
+	tar -zxvf LibreOffice_6.0.4_Linux_x86-64_deb.tar.gz
+	cd LibreOffice_6.0.4.2_Linux_x86-64_deb/DEBS
+	dpkg -i *.deb
+fi
+echo -e "\e[44m\e[5mThank You for Using this tool...\e[0m"
