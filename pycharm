@@ -1,0 +1,17 @@
+#!/bin/bash 
+if [[ $EUID -ne 0 ]]; then 
+	echo "This script must be run as root" 1>&2 
+	exit 1 
+else 
+	wget https://download-cf.jetbrains.com/python/pycharm-community-2018.1.4.tar.gz
+	tar -xzvf pycharm-community-2018.1.4.tar.gz
+	cp -r pycharm-community-2018.1.4/ /etc/
+	rm -r pycharm-community-2018.1.4/
+	d=/etc/pycharm-community-2018.1.4/bin
+	if [ -d "$d" ]; then
+		echo 'export PATH=$PATH:/etc/pycharm-community-2018.1.4/bin' >>~/.bashrc
+	else
+		echo "Dir Wrong"
+	fi
+fi
+echo -e "\e[44m\e[5mThank You for Using this tool...\e[0m"

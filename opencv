@@ -32,7 +32,6 @@ else
 	    -D BUILD_EXAMPLES=ON ..
 	make -j4
 	make install
-
-	echo "Thanks for using this script"
 fi
+echo -e "\e[44m\e[5mThank You for Using this tool...\e[0m"
 

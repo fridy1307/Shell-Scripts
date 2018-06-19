@@ -10,5 +10,5 @@ else
 	apt-get install network-manager-strongswan -y
 	apt-get install network-manager-vpnc -y
 	apt-get install network-manager-vpnc-gnome -y
-	echo "Thanks for using this script"
 fi
+echo -e "\e[44m\e[5mThank You for Using this tool...\e[0m"
