@@ -1,5 +1,3 @@
-# A collection of general purpose shell scripts useful for linux geeks
-
 # Tested in Kali, Ubuntu
 
 # 1. LibreOffice
