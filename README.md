@@ -1,7 +1,8 @@
 # A collection of general purpose shell scripts useful for linux geeks
-#Tested in Kali, Ubuntu
 
-#1. LibreOffice
+# Tested in Kali, Ubuntu
+
+# 1. LibreOffice
     A onetime run script to install LibreOffice
     #After downloding the script run the following commands in same directory
         sudo su
@@ -9,7 +10,7 @@
         ./LibreOffice
         
 
-#2. mongodb
+# 2. mongodb
     A onetime run script to install and configure mongodb
     #After downloding the script run the following commands in same directory
         sudo su
@@ -17,7 +18,7 @@
         ./mongodb
         
 
-#3. opencv
+# 3. opencv
     A onetime run script to install and configure opencv
     #After downloding the script run the following commands in same directory
         sudo su
@@ -25,7 +26,7 @@
         ./opencv
         
 
-#4. openvpn
+# 4. openvpn
     A onetime run script to install and configure openvpn #Tested in Kali Linux
     #After downloding the script run the following commands in same directory
         sudo su
@@ -33,7 +34,7 @@
         ./openvpn
         
 
-#5. pycharm
+# 5. pycharm
     A onetime run script to install and configure pycharm
     #After downloding the script run the following commands in same directory
         sudo su
@@ -41,7 +42,7 @@
         ./pycharm
         
 
-#6. rtl8723be
+# 6. rtl8723be wifi driver
     A onetime run script to install and configure rtl8723be wifi driver
     #After downloding the script run the following commands in same directory
         sudo su
