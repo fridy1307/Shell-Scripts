@@ -1,0 +1,7 @@
+#!/bin/bash
+SampStr="The dog climbed the tree"
+
+echo "${SampStr//dog/cat}"
+
+name="NEW"
+echo "${name:=Vipin}"

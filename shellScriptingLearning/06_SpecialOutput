@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cat<< END # The char which end the String
+This text
+prints on
+Many Lines
+END
+
+cat<<NEW
+This will
+wnd with
+NEW

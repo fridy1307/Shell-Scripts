@@ -1,0 +1,45 @@
+#!/bin/bash
+
+#read -p "How old are you? " age
+
+#if [ $age -ge 16 ]  # -ge => >=
+#then
+#	echo "You can Drive"
+#elif [ $age -eq 15 ] # -eq => ==
+#then
+#	echo "You can drive next year"
+#else
+#	echo "You can't drive"
+#fi
+
+# eq => ==
+# ne => !=
+# le => <=
+# lt => <
+# ge => >=
+# gt => >
+
+
+read -p "Enter a number : " num
+
+if ((num == 10)); then
+	echo "Your number equals to 10"
+fi
+
+if ((num > 10)); then
+	echo "'Tis greater then 10"
+else
+	echo "'Tis less then 10"
+fi
+
+if (( ((num % 2)) == 0)); then
+	echo "'Tis even"
+fi
+
+if (( ((num > 0)) && ((num < 11)) )); then
+	echo "$num is between 1 and 10"
+fi
+
+touch samp_file && vim samp_file
+
+[ -d samp_dir ] || mkdir samp_dir

@@ -1,0 +1,10 @@
+#!/bin/bash
+randStr="A random String"
+
+echo "String Length: ${#randStr}"
+
+echo "Str after index 2: ${randStr:2}"
+
+echo "From 2 to 7: ${randStr:2:7}"
+
+echo "After A :${randStr#*A }"

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+read -p "File Name: " name
+op="A"
+fw="Good Bye!!!"
+while [ "$op" == "A" ]; do
+	if [ -e "$name" ]; then
+		cat<<END
+		The File Already Exists!!!
+		Enter Y to replace all the content of file and continue
+		Enter N to quit
+		Enter a differernt NAME of file
+END
+		read -p "NAME: " new
+		if [ -z "$new" ]; then
+			continue
+		fi
+		if [[ "$new" == "Y"  ]]; then
+			echo "conitnuing with $name"
+			op="B"
+		elif [[ "$new" == "N" ]]; then
+			echo "Good Bye!!!"
+			exit
+		else
+			name="$new"
+		fi
+	else
+		op="B"
+	fi
+done
+echo "Using Name $name"
+sleep 1
+pre='#!/bin/bash'
+echo $pre > "$name"
+chmod 755 "$name"
+vim "$name"
+echo "Thank You for Using this tool"

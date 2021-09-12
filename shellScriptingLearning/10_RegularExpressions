@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Validate Date : " date
+pattern="^[0-9]{8}$" #8 digits pattern of 0-9 starts by ^ and end by $
+
+if [[ $date =~ $pattern ]]; then
+	echo "$date is Valid"
+else
+	echo "$date is not valid"
+fi
+
