@@ -47,4 +47,3 @@
         chmod 755 rtl8723be
         ./rtl8723be
         
-# If you need a script for a specific work feel free to contact me at: vpnmahawar@gmail.com
